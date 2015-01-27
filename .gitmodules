@@ -1,0 +1,3 @@
+[submodule "rps"]
+	path = rps
+	url = git@github.com:ChinaRed/RPS.git

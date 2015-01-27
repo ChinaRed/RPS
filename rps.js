@@ -1,3 +1,4 @@
+
 var rock = document.getElementById('rock');
 rock.style.visibility= "hidden";
 var paper = document.getElementById('paper');
@@ -7,10 +8,14 @@ scissor.style.visibility= "hidden";
 
 var result = document.getElementById("result");
 
+
 var myArray = ["ROCK","PAPER","SCISSOR"];
 
+
 function winner (submit){
+
   var user = document.getElementById('userInput').value.toUpperCase();
+
   var compRandom = myArray[Math.floor(Math.random() * myArray.length)];
   console.log(user);
 
@@ -40,4 +45,5 @@ function winner (submit){
   }
   console.log(compRandom);
 }
+
 

@@ -6,6 +6,16 @@ paper.style.visibility= "hidden";
 var scissor = document.getElementById('scissor');
 scissor.style.visibility= "hidden";
 
+
+var rock2 = document.getElementById('rock2');
+rock2.style.visibility= "visible";
+var paper2 = document.getElementById('paper2');
+paper2.style.visibility= "visible";
+var scissor2 = document.getElementById('scissor2');
+scissor2.style.visibility= "visible";
+
+
+
 var result = document.getElementById("result");
 
 
@@ -30,6 +40,21 @@ function winner (submit){
     result.innerHTML = "You Lose Suckaaaaaaaa";
         
   }
+
+  if (user === 'ROCK'){
+    paper2.style.visibility= "hidden";
+    rock2.style.visibility="visible";
+    scissor2.style.visibility= "hidden";
+  } else if (user === 'PAPER'){
+    paper2.style.visibility= "visible";
+    rock2.style.visibility="hidden";
+    scissor2.style.visibility= "hidden";
+  } else {
+    paper2.style.visibility= "hidden";
+    rock2.style.visibility="hidden";
+    scissor2.style.visibility= "visible";
+  }
+
   if (compRandom === 'ROCK'){
     paper.style.visibility= "hidden";
     rock.style.visibility= "visible";

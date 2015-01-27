@@ -21,6 +21,7 @@ var result = document.getElementById("result");
 
 var myArray = ["ROCK","PAPER","SCISSOR"];
 
+
 function winner (submit){
 
   var user = document.getElementById('userInput').value.toUpperCase();
@@ -39,6 +40,7 @@ function winner (submit){
     result.innerHTML = "You Lose Suckaaaaaaaa";
         
   }
+
   if (user === 'ROCK'){
     paper2.style.visibility= "hidden";
     rock2.style.visibility="visible";
@@ -52,7 +54,7 @@ function winner (submit){
     rock2.style.visibility="hidden";
     scissor2.style.visibility= "visible";
   }
-  
+
   if (compRandom === 'ROCK'){
     paper.style.visibility= "hidden";
     rock.style.visibility= "visible";

@@ -22,7 +22,7 @@ var result = document.getElementById("result");
 var myArray = ["ROCK","PAPER","SCISSOR"];
 
 
-function winner (submit){
+function winner (){
 
   var user = document.getElementById('userInput').value.toUpperCase();
 

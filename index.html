@@ -28,28 +28,47 @@
 <div class="container-fluid"> 
   <div class="col-md-6 col-md-offset-3"> 
     <div class="compImages">
-      <img id="rock" src="rock.jpeg">
-      <img id="paper" src="paper.jpeg">
-      <img id="scissor" src="scissors.jpeg">
+      <img id="rock" src="images/rock.jpeg">
+      <img id="paper" src="images/paper.jpeg">
+      <img id="scissor" src="images/scissors.jpeg">
     </div>
   </div>
 </div> -->
 
+<div class="container-fluid">
+  <div class="col-md-6 col-md-offset-3"> 
+    <h2>Rock, Paper or Scissor?:</h2> 
+      <INPUT TYPE="Text" Size="15" value="" ID="userInput">
+      <INPUT TYPE="Button" Value="SEND" onClick="winner()">
+    <h1><div id="result">&nbsp;</div></h1>
+  </div>
+</div>
 
+<div class="container-fluid"> 
+  <div class="col-md-10 col-md-offset-2"> 
+    <div class="userImages">
+      <h4>User Picks:</h4>
+        <div>
+          <img id="rock2" src="images/rock.jpeg">
+          <img id="paper2" src="images/paper.jpeg">
+          <img id="scissor2" src="images/scissors.jpeg">
+        </div>
+    </div>
+  </div>
+</div>
 
-<INPUT TYPE="Text" Size="15" value="" ID="userInput">
-<INPUT TYPE="Button" Value="SEND" onClick="winner()">
-
-<div id="result"></div>
-
-<div><img id="rock2" src="rock.jpeg">
-<img id="paper2" src="paper.jpeg">
-<img id="scissor2" src="scissors.jpeg"></div>
-
-<div><img id="rock" src="rock.jpeg">
-<img id="paper" src="paper.jpeg">
-<img id="scissor" src="scissors.jpeg"></div>
-
+<div class="container-fluid"> 
+  <div class="col-md-10 col-md-offset-2"> 
+    <div class="compImages">
+      <h4>Computer Picks:</h4>
+        <div>
+          <img id="rock" src="images/rock.jpeg">
+          <img id="paper" src="images/paper.jpeg">
+          <img id="scissor" src="images/scissors.jpeg">
+        </div>
+    </div> 
+  </div>
+</div>     
 
 
 <script src="rps.js"></script>  

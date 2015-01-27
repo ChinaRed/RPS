@@ -7,7 +7,7 @@ scissor.style.visibility= "hidden";
 
 var result = document.getElementById("result");
 
-var myArray = ["R","P","S"];
+var myArray = ["ROCK","PAPER","SCISSOR"];
 
 function winner (submit){
   var user = document.getElementById('userInput').value.toUpperCase();
@@ -18,18 +18,18 @@ function winner (submit){
     //alert("Tie Bitchessssssss!");
     result.innerHTML = "Tie Bitchessssssss";
     
-  } else if (user === 'ROCK' && compRandom === 'S' || user === 'SCISSOR' && compRandom === 'P' || user === 'PAPERf' && compRandom === 'R'){
+  } else if (user === 'ROCK' && compRandom === 'SCISSOR' || user === 'SCISSOR' && compRandom === 'PAPER' || user === 'PAPER' && compRandom === 'ROCK'){
     result.innerHTML = "You're Winnerrrrrrrr";
       
   } else {
     result.innerHTML = "You Lose Suckaaaaaaaa";
         
   }
-  if (compRandom === 'R'){
+  if (compRandom === 'ROCK'){
     paper.style.visibility= "hidden";
     rock.style.visibility= "visible";
     scissor.style.visibility= "hidden";
-  } else if (compRandom === 'P'){
+  } else if (compRandom === 'PAPER'){
     paper.style.visibility= "visible";
     rock.style.visibility= "hidden";
     scissor.style.visibility= "hidden";
